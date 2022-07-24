@@ -5,12 +5,19 @@
         "driver": "SQL Server",
         "sample_query": "SELECT * FROM production.brands"
     },
-    "rl_contexts": [
-        {
-            "query": "SELECT * FROM production.products WHERE [INPUT]",
-            "table_filter": ["production.products"],
-            "column_filter": ["product_name"],
-            "goal": "Trek 820 - 2016"
-        }
-    ]
+    "rl": {
+        "state_info": {
+            "mark_error": true,
+            "query_result_length": 10000,
+            "padding_char": "\u0000"
+        },
+        "contexts": [
+            {
+                "query": "SELECT * FROM production.products WHERE brand_id=8 [INPUT]",
+                "table_filter": ["production.products"],
+                "column_filter": ["product_name"],
+                "goal": "Trek 820 - 2016"
+            }
+        ]
+    }
 }
