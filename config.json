@@ -2,7 +2,8 @@
     "database": {
         "name": "BikeStores",
         "server": ".\\SQLEXPRESS",
-        "driver": "SQL Server"
+        "driver": "SQL Server",
+        "sample_query": "SELECT * FROM production.brands"
     },
     "rl_contexts": [
         {
