@@ -13,7 +13,7 @@
         },
         "contexts": [
             {
-                "query": "SELECT * FROM production.products WHERE brand_id=8 [INPUT]",
+                "query": "SELECT * FROM production.products WHERE brand_id='[INPUT]' AND category_id=8",
                 "table_filter": ["production.products"],
                 "column_filter": ["product_name"],
                 "goal": "Trek 820 - 2016"
