@@ -17,6 +17,12 @@
                 "table_filter": ["production.products"],
                 "column_filter": ["product_name"],
                 "goal": "Trek 820 - 2016"
+            },
+            {
+                "query": "SELECT * FROM sales.customers WHERE email='[INPUT]'",
+                "table_filter": ["sales.customers"],
+                "column_filter": ["email"],
+                "goal": "debra.burks@yahoo.com"
             }
         ]
     }
