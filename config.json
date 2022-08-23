@@ -7,9 +7,7 @@
     },
     "rl": {
         "state_info": {
-            "mark_error": true,
-            "query_result_length": 100,
-            "padding_char": "\u0000"
+            "mark_error": true
         },
         "contexts": [
             {
