@@ -12,15 +12,19 @@
         "contexts": [
             {
                 "query": "SELECT * FROM production.products WHERE brand_id='[INPUT]' AND category_id=8",
-                "table_filter": ["production.products"],
-                "column_filter": ["product_name"],
                 "goal": "Trek 820 - 2016"
             },
             {
                 "query": "SELECT * FROM sales.customers WHERE email='[INPUT]'",
-                "table_filter": ["sales.customers"],
-                "column_filter": ["email"],
                 "goal": "debra.burks@yahoo.com"
+            },
+            {
+                "query": "SELECT * FROM sales.customers WHERE email='[INPUT]'",
+                "goal": "zina.bonner@hotmail.com"
+            },
+            {
+                "query": "SELECT * FROM production.products WHERE brand_id='[INPUT]' AND category_id=7",
+                "goal": "Electra Amsterdam Original 3i - 2015/2017"
             }
         ]
     }
